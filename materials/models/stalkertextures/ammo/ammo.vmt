@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\stalkertextures\ammo\ammo.vtf"
+	
+
+	"$halflambert" 1
+}
