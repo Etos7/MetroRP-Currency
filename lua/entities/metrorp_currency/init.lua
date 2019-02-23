@@ -7,7 +7,6 @@ include("shared.lua")
 local function GetMoneybagModel(self)
 	local amount = self:Getamount()
     for k,v in pairs(mrp_currency.config.models) do 
-        print(v[1])
         if amount < v[2]+1 then return v[1] end
     end 
 end
