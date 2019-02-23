@@ -13,8 +13,8 @@ local function GetMoneybagModel(self)
 end
 
 function ENT:Initialize()
-	 
-    self:SetModel(GetMoneybagModel(self))
+	local model = GetMoneybagModel(self) or "models/metrorp-by-etos7/currency/pkm.mdl"
+    self:SetModel(model)
     self:PhysicsInit(SOLID_VPHYSICS)
     self:SetMoveType(MOVETYPE_VPHYSICS)
     self:SetSolid(SOLID_VPHYSICS)
